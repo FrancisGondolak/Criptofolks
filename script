@@ -1,0 +1,33 @@
+drop database criptofolks;
+create database criptofolks;
+use criptofolks;
+
+create table usuario (
+id_usuario int not null auto_increment,
+nombreUsuario varchar (128) not null,
+correoUsuario varchar (128) not null,
+passwordUsuario varchar (128) not null,
+permisoUsuario tinyint not null,
+PRIMARY KEY (id_usuario)
+);
+
+create table criptofolk (
+id_criptofolk int not null auto_increment,
+nombreCriptofolk varchar (128) not null,
+habitatCriptofolk varchar (128) not null,
+tipoCriptofolk varchar (128) not null,
+descripcionCriptofolk text not null,
+imagenCriptofolk varchar (128) not null,
+PRIMARY KEY (id_criptofolk)
+);
+
+create table colecciona (
+id_colecciona int not null auto_increment,
+fk_usuario int not null,
+fk_criptofolk int not null,
+FOREIGN KEY (fk_usuario) REFERENCES usuario (id_usuario),
+FOREIGN KEY (fk_criptofolk) REFERENCES criptofolk (id_criptofolk),
+PRIMARY KEY (id_colecciona)
+);
+
+insert into usuario (nombreUsuario, correoUsuario, passwordUsuario, permisoUsuario)  values ('SirFrancis', 'adminFran@criptofolks.com', 'da8fbf9a3bf887559a6480c7a3359519', 1);

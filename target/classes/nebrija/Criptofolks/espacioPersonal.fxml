@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nebrija.Criptofolks.EspacioPersonalController">
+   <children>
+      <ImageView fitHeight="440.0" fitWidth="733.0" layoutY="119.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="1.0" prefHeight="114.0" prefWidth="734.0">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="733.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/headerCriptofolks.jpg" />
+               </image></ImageView>
+         </children>
+      </HBox>
+      <HBox layoutY="94.0" prefHeight="28.0" prefWidth="734.0">
+         <children>
+            <Button fx:id="paginaIndexBoton" mnemonicParsing="false" onAction="#switchToIndex" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #73F507;" text="Inicio">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaRegistroBoton" mnemonicParsing="false" onAction="#switchToRegistro" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: #73F507;" text="Registro/Login">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaListaBoton" mnemonicParsing="false" onAction="#switchToLista" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #73F507;" text="Criptofolks">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaAgregarBoton" mnemonicParsing="false" onAction="#switchToAgregar" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #73F507;" text="Añadir Criptofolk">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaEditarBoton" mnemonicParsing="false" onAction="#switchToEditar" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #73F507;" text="Editar/Eliminar">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaMapaBoton" mnemonicParsing="false" onAction="#switchToMapa" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: #73F507;" text="Mapa">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="paginaPersonalBoton" mnemonicParsing="false" onAction="#switchToPersonal" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: #75C228" text="Espacio Personal">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#86DA32" height="385.0" layoutX="98.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" width="552.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Rectangle>
+      <Text fx:id="textoEspacioPersonal" layoutX="182.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESPACIO PERSONAL" wrappingWidth="381.3367156982422">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
